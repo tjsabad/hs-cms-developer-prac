@@ -8,7 +8,7 @@
   
 ## Configure local development tools
   
-> `npx init hs`
+> `npx hs init`
   
 This will open your web browser and take you to the page where you can create your Personal Access Token which is required for setting up the local development environment. **Make sure that the portal in the browser is pointing to your sandbox.** You double check by looking at the portal id in the URL. If you are not in the sandbox portal you can simply change the portal id in the URL and hit enter.
   
