@@ -1,0 +1,7 @@
+<ul class="nav {{ module.position }}">
+  {% for menu_item in module.menu %}
+  <li class="nav-item">
+    <a class="nav-link" href="{{ menu_item.menu_link }}">{{ menu_item.menu_description }}</a> 
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-body">
+    <div class="accordion {{ module.style }}" id="main_component">
+    {% for accordian_item in module.accordian %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="header_title{{ loop.index }}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body_id{{ loop.index }}" aria-expanded="true" aria-controls="body_id{{ loop.index }}">
+          {{ accordian_item.accordian_title }}
+        </button>
+      </h2>
+      <div id="body_id{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="header_title{{ loop.index }}" data-bs-parent="#main_component">
+        <div class="accordion-body">
+          {{ accordian_item.accordian_body }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  </div>
+</div>

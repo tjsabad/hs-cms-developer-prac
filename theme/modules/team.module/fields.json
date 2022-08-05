@@ -1,0 +1,76 @@
+[
+  {
+    "name" : "team_title_position",
+    "label" : "Team Title Menu Position",
+    "required" : false,
+    "type": "choice",
+      "choices": [
+        ["text-start", "Left"],
+        ["text-center", "Center"],
+        ["text-end", "Right"]
+      ],
+      "display": "select"
+  },
+  {
+    "name": "team_title",
+    "label": "Team Title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": null 
+  },
+  {
+    "id" : "team_members",
+    "name" : "team_members",
+    "label" : "Team Members",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "default" : null
+    },
+    "children" : [  
+      {
+        "id" : "team_members.member_name",
+        "name" : "member_name",
+        "label" : "Team member name",
+        "required" : true,
+        "type": "text"
+      }, 
+      {
+        "id" : "team_members.member_role",
+        "name" : "member_role",
+        "label" : "Team member role",
+        "required" : true,
+        "locked" : false,
+        "type" : "text"
+      },
+      {
+        "id" : "team_members.member_profile_image",
+        "name": "member_profile_image",
+        "label": "Team member profile picture",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "",
+        "help_text": "",
+        "responsive": true,
+        "resizable": true,
+        "show_loading" : false,
+        "type": "image",
+        "default": {
+          "size_type" : "auto",
+          "src": "",
+          "alt": null,
+          "loading": "disabled"}
+      }
+    ],
+    "type" : "group"
+}
+]

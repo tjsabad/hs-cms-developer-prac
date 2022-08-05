@@ -1,0 +1,15 @@
+<div class="card mb-2">
+  <div class="card-header {{ module.mission_position }}">
+    <b>{{ module.mission_title }}</b>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col">
+        <img src="{{ module.mission_image.src }}" class="img-fluid" alt="{{ module.mission_image.alt }}"/>
+      </div>
+      <div class="col">
+        {{ module.mission_description }}
+      </div>
+    </div>
+  </div>
+</div>

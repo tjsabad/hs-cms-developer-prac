@@ -1,0 +1,20 @@
+<div class="card mb-2">
+  <div class="card-header {{ module.team_title_position }}">
+    {{ module.team_title }}
+  </div>
+  <div class="card-body">
+    <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+      {% for member in module.team_members %}
+        <div class="col">
+          <div class="card">
+            <img src="{{ member.member_profile_image.src }}" alt="{{ member.member_profile_image.alt }}" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">{{ member.member_name }}</p>
+              <p class="card-text">{{ member.member_role }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

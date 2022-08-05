@@ -1,0 +1,20 @@
+{
+    "label": "Practicum Theme",
+    "author": {
+          "name": "Timothy-John Sabad",
+          "email": "timothy@sabad.co.za",
+          "url": "https://www.sabad.co.za/"
+      },
+    "enable_domain_stylesheets": false,
+    "license": "./license.txt",
+    "responsive_breakpoints": [
+      {
+        "name": "mobile",
+        "mediaQuery": "@media (max-width: 767px)",
+        "previewWidth": {
+          "value": 477
+        }
+      }
+    ]
+  }
+  

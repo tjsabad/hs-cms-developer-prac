@@ -1,0 +1,49 @@
+[
+  {
+    "name" : "style",
+    "label" : "Style",
+    "required" : false,
+    "type": "choice",
+      "choices": [
+        ["", "Box"],
+        ["accordion-flush", "Flush"]
+      ],
+      "display": "select"
+  },
+  {
+    "id" : "accordian",
+    "name" : "accordian",
+    "label" : "Accordian",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : "accordian.accordian_title",
+      "default" : null
+    },
+    "children" : [  
+      {
+        "id" : "accordian.title",
+        "name" : "accordian_title",
+        "label" : "Title",
+        "required" : true,
+        "type": "text"
+      }, 
+      {
+        "id" : "accordian.body",
+        "name" : "accordian_body",
+        "label" : "Body",
+        "required" : true,
+        "locked" : false,
+        "type" : "text"
+      } 
+    ],
+    "type" : "group",
+    "default" : [ 
+      {
+      "style" : "",
+      "title" : "",
+      "body" : ""
+    } ]
+}]

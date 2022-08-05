@@ -1,0 +1,44 @@
+[
+  {
+    "name" : "position",
+    "label" : "Menu Position",
+    "required" : false,
+    "type": "choice",
+      "choices": [
+        ["justify-content-start", "Left"],
+        ["justify-content-center", "Center"],
+        ["justify-content-end", "Right"]
+      ],
+      "display": "select"
+  },
+  {
+    "id" : "menu",
+    "name" : "menu",
+    "label" : "Menu",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "default" : null
+    },
+    "children" : [  
+      {
+        "id" : "menu.description",
+        "name" : "menu_description",
+        "label" : "Descritpion",
+        "required" : true,
+        "type": "text"
+      }, 
+      {
+        "id" : "menu.link",
+        "name" : "menu_link",
+        "label" : "Link",
+        "required" : true,
+        "locked" : false,
+        "type" : "text"
+      } 
+    ],
+    "type" : "group"
+}
+]

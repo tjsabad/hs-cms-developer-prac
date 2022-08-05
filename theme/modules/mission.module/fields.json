@@ -1,0 +1,46 @@
+[
+  {
+    "name" : "mission_position",
+    "label" : "Mission Position",
+    "required" : false,
+    "type": "choice",
+      "choices": [
+        ["text-start", "Left"],
+        ["text-center", "Center"],
+        ["text-end", "Right"]
+      ],
+      "display": "select"
+  },
+  {
+    "name" : "mission_title",
+    "label" : "Mission Title",
+    "required" : false,
+    "type": "text"
+  },
+  {
+    "name" : "mission_description",
+    "label" : "Mission Description",
+    "required" : false,
+    "type": "richtext",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": null 
+  },
+  {
+    "name": "mission_image",
+    "label": "Mission Image",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "",
+    "help_text": "",
+    "responsive": true,
+    "resizable": true,
+    "show_loading" : false,
+    "type": "image",
+    "default": {
+      "size_type" : "auto",
+      "src": "",
+      "alt": null,
+      "loading": "disabled"}
+  }
+]

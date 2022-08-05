@@ -1,0 +1,47 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+<header class="header">
+
+  {# The link below is used for a navigation skipper which allows users navigating the site with their keyboard to skip over the site navigation. More information on the navigation skipper can be found here: https://github.com/HubSpot/cms-theme-boilerplate/wiki/Accessibility #}
+
+  {# Top header drag and drop area #}
+
+  {% dnd_area "header-top"
+    label="Top header",
+    class="content-wrapper"
+  %}
+  {% end_dnd_area %}
+
+  {# Main header #}
+    {# Header logo column #}
+
+    {# Header navigation column #}
+
+    <div class="container-fluid border-bottom partial">
+      <div class="row">
+        <div class="col">
+          {% module "header-primary"
+            path="../../modules/header",
+            label="Header"
+          %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          {% module "navigation-primary"
+            path="../../modules/menu",
+            label="Primary navigation"
+          %}
+        </div>
+      </div>
+    </div>
+
+  {% dnd_area "header-bottom"
+    label="Bottom header",
+    class="content-wrapper"
+  %}
+  {% end_dnd_area %}
+
+</header>
