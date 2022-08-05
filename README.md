@@ -1,5 +1,7 @@
 # CMS for HubSpot Developers Practicum
 
+[CMS Dev Docs](https://developers.hubspot.com/docs/cms/guides/getting-started)
+
 ## Install HubSpot CMS CLI
  - Create HubSpot sandbox account
  - Make sure that node and npm is already installed
