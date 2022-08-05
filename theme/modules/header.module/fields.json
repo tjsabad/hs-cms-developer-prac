@@ -11,7 +11,7 @@
       "placeholder": "",
       "inline_help_text": "",
       "help_text": "",
-      "default": null 
+      "default": "Cats are wonderful" 
   },
   {
       "name": "quote",
@@ -21,7 +21,7 @@
       "type": "richtext",
       "inline_help_text": "",
       "help_text": "",
-      "default": null 
+      "default": "The Naming of Cats is a difficult matter, It isn't just one of your holiday games; You may think at first I'm as mad as a hatterWhen I tell you, a cat must have THREE DIFFERENT NAMES." 
   },
   {
       "name": "quote_author",
@@ -35,6 +35,6 @@
       "placeholder": "",
       "inline_help_text": "",
       "help_text": "",
-      "default": null 
+      "default": "T.S. Eliot" 
   }
 ]

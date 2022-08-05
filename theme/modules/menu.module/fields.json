@@ -39,6 +39,20 @@
         "type" : "text"
       } 
     ],
-    "type" : "group"
+    "type" : "group",
+    "default" : [
+      {
+        "menu_description" : "Home",
+        "menu_link" : "#"
+      },
+      {
+        "menu_description" : "About",
+        "menu_link" : "#"
+      },
+      {
+        "menu_description" : "Blog",
+        "menu_link" : "#"
+      }
+    ]
 }
 ]
